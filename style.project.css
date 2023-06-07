@@ -25,19 +25,23 @@
 }
 
 body {
-  background: var(--bg-url) no-repeat top center/cover;
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  background: var(--bg-url) no-repeat top center/ 100%;
+  background-color: #40123d;
 }
 
 body * {
   font-family: "Inter", sans-serif;
   color: var(--text-color);
+
+  
 }
 
 #container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
   width: 100%;
   padding: 0 24px;
   display: flex;
@@ -61,6 +65,14 @@ img {
   .light {
     --bg-url: url(./assets/bg-deskto-light.jpg);
   }
+}
+
+@media (max-width: 700px) {
+  img {
+    margin-top: 24px;
+    width: 350px;
+    height: 200px;
+  } 
 }
 
 @keyframes slide-in {
